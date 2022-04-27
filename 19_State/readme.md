@@ -6,29 +6,30 @@
 classDiagram
 class StatePatternRobot{
   -State __state
-  +show_light_pattern(): None
-  +show_display_msgs(): None
+  +get_light_pattern(): str
+  +get_display_msgs(): str
+  +changeState(): None
 }
 
 class State{
   <<interface>>
-  +show_light_pattern(): None
-  +show_display_msgs(): None
+  +get_light_pattern(): str
+  +get_display_msgs(): str
 }
 
 class IdleState{
-  +show_light_pattern(): None
-  +show_display_msgs(): None
+  +get_light_pattern(): str
+  +get_display_msgs(): str
 }
 
 class ErrorState{
-  +show_light_pattern(): None
-  +show_display_msgs(): None
+  +get_light_pattern(): str
+  +get_display_msgs(): str
 }
 
 class RunningState{
-  +show_light_pattern(): None
-  +show_display_msgs(): None
+  +get_light_pattern(): str
+  +get_display_msgs(): str
 }
 
 StatePatternRobot o-- State
