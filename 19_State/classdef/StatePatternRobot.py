@@ -1,15 +1,15 @@
 
 class StatePatternRobot():
-    def __init__() -> None:
+    def __init__(self) -> None:
         self.__state = None
-    
-    def change_state(new_state):
+
+    def change_state(self, new_state):
         self.__state = new_state
 
-    def is_running():
-        self.__state.is_runnable()
-    
-    def show_display_msg():
-        self.__state.show_display_msgs()
+    def get_light_pattern(self, ):
+        return self.__state.get_light_pattern()
+
+    def get_display_msgs(self, ):
+        return self.__state.get_display_msgs()
 
 
