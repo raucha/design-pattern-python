@@ -31,6 +31,7 @@ class SharpSeparatedCommandBuilder{
 Director o-- Builder
 class Director{
   -Builder command_builder
+  +construct(): string
 }
 
 
