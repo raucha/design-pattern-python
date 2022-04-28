@@ -15,3 +15,6 @@ for s in states:
     print(f"light pattern: {format(robot_context.get_light_pattern())}")
     print("============")
     print("")
+
+robot_context.change_state(None)
+robot_context.change_state("test")
